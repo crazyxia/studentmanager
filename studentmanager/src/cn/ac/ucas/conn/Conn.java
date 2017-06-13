@@ -5,16 +5,16 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conn {
-	
-	public Connection getConn()  {
+
+	public Connection getConn() {
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			String url="jdbc:mysql://127.0.0.1/student?useUicode=true&characterEncoding=utf-8";
-			String user="root";
-			String password="123456";
-            conn=DriverManager.getConnection(url, user, password);			
-			
+			String url = "jdbc:mysql://localhost/localhost:3306/db_studentmanager";
+			String user = "root";
+			String password = "root";
+			conn = DriverManager.getConnection(url, user, password);
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -22,7 +22,5 @@ public class Conn {
 		}
 		return conn;
 	}
-
-	
 
 }

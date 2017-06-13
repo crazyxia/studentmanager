@@ -27,7 +27,7 @@
     <h1>学生信息管理系统</h1>
        <div class="login">
           <form name="loin" method="post" action="login.jsp" onsubmit="return checkInput(this);">
-             <span>usernmae:</span><input type="text" name="username" id="username"></br>
+             <span>usernmae:</span><input type="text" name="username" id="username"><br>
              <span>password:</span><input type="password" name="password" id="password"><br>
              <input type="submit">
           </form>
